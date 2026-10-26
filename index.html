@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amanda Bown | Geology, Alfred University</title>
+<meta name="description" content="Amanda Brown is a senior Geology major at Alfred University. Research, work, resume and a ten-year plan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Fraunces:ital,opsz,wght@1,9..144,300..500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FBF7EE; --sand:#EDE5D2; --ink:#161411; --umber:#4A4331; --clay:#B9A783; --muted:#6E6757;
+  --sans:'Figtree',system-ui,sans-serif;
+  --flow:'Fraunces',Georgia,serif;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);color:var(--ink);background-color:var(--cream);line-height:1.6;font-size:1.0625rem;
+  background-image:linear-gradient(rgba(74,67,49,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(74,67,49,.07) 1px,transparent 1px);
+  background-size:84px 84px;
+}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--umber);outline-offset:3px}
+.flow{font-family:var(--flow);font-style:italic;font-weight:300;letter-spacing:-.01em}
+section{padding:clamp(64px,10vw,140px) var(--pad);position:relative}
+.wrap{max-width:1180px;margin:0 auto}
+h2{font-weight:500;font-size:clamp(2.6rem,7vw,5.6rem);line-height:1;letter-spacing:-.04em;margin-bottom:clamp(28px,4vw,56px)}
+h2 .flow{font-size:1.08em}
+p{max-width:62ch}
+
+/* top bar */
+.bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px var(--pad);font-weight:600;font-size:.95rem;position:relative;z-index:5}
+.bar nav{display:flex;gap:clamp(12px,2.4vw,32px);flex-wrap:wrap;justify-content:flex-end}
+.bar a{text-decoration:none;font-weight:500}
+.bar a:hover{text-decoration:underline;text-underline-offset:5px}
+
+/* hero */
+.hero{padding-top:clamp(24px,4vw,56px);padding-bottom:0;overflow:hidden}
+.hero-top{display:grid;grid-template-columns:1fr minmax(220px,340px);gap:clamp(24px,6vw,96px);align-items:start;padding-left:clamp(0px,8vw,120px)}
+.hero-top p{font-size:1.15rem;margin-top:clamp(0px,4vw,64px)}
+.strata{width:100%;aspect-ratio:1;border-radius:6px;display:block}
+.name{width:max-content;font-weight:500;font-size:13vw;line-height:.9;letter-spacing:-.065em;white-space:nowrap;margin:clamp(-8px,-1vw,0px) 0 0 -.04em;display:flex;align-items:baseline;gap:.02em;clip-path:inset(0 100% 0 0);animation:reveal 1.6s cubic-bezier(.2,.7,.2,1) .2s forwards}
+.name .flow{font-size:1.12em;letter-spacing:-.04em;margin-right:-.05em}
+.name sup{font-size:.35em;font-weight:400;align-self:flex-start;margin-top:.15em}
+@keyframes reveal{to{clip-path:inset(0 -2% 0 0)}}
+
+/* wave dividers */
+.wave{display:block;width:100%;height:clamp(40px,7vw,100px);position:absolute;left:0;right:0;pointer-events:none}
+.wave.top{top:calc(-1 * clamp(40px,7vw,100px) + 1px)}
+.wave.bot{bottom:calc(-1 * clamp(40px,7vw,100px) + 1px);transform:scaleY(-1)}
+
+/* research */
+.areas{display:grid;gap:0;border-top:1.5px solid var(--ink)}
+.area{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(16px,4vw,64px);padding:clamp(22px,3vw,40px) 0;border-bottom:1.5px solid var(--ink)}
+.area h3{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:500;letter-spacing:-.03em;line-height:1.15}
+.area p{color:var(--muted)}
+
+/* work */
+.work{background:var(--sand);padding-top:clamp(64px,10vw,140px)}
+.rows{border-top:1.5px solid var(--ink)}
+.row{display:grid;grid-template-columns:5.5rem minmax(0,4fr) minmax(0,7fr);gap:clamp(12px,3vw,48px);padding:clamp(22px,3vw,36px) 0;border-bottom:1.5px solid var(--ink)}
+.row .yr{font-weight:600}
+.row h3{font-size:1.35rem;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.row small{display:block;color:var(--muted);font-size:.95rem;font-weight:500;margin-top:4px}
+
+/* resume */
+.cv-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,40px)}
+.doc{display:flex;flex-direction:column;justify-content:space-between;gap:56px;min-height:260px;padding:clamp(24px,3vw,40px);border:1.5px solid var(--ink);border-radius:6px;text-decoration:none;background:var(--cream);transition:background .25s,color .25s}
+.doc:hover{background:var(--ink);color:var(--cream)}
+.doc b{font-size:clamp(2rem,4.5vw,3.6rem);font-weight:500;letter-spacing:-.04em;line-height:1}
+.doc span{font-size:.95rem;font-weight:500}
+
+/* professor comments */
+.prof{background:var(--umber);color:var(--cream);margin:clamp(40px,7vw,100px) 0}
+.prof .wrap>p{color:#D8CFB8;margin:-24px 0 clamp(28px,4vw,48px)}
+.quotes{border-top:1.5px solid rgba(251,247,238,.5)}
+.q{border-bottom:1.5px solid rgba(251,247,238,.5)}
+.q>button{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) 2.4rem;gap:24px;align-items:start;width:100%;padding:clamp(22px,3vw,36px) 0}
+.q>button:focus-visible{outline:3px solid var(--cream);outline-offset:4px}
+.q blockquote{font-size:clamp(1.5rem,3.3vw,2.6rem);line-height:1.2;max-width:28ch}
+.q cite{display:block;font-family:var(--sans);font-style:normal;font-size:.95rem;font-weight:500;color:#D8CFB8;margin-top:14px;letter-spacing:0}
+.plus{width:2.4rem;height:2.4rem;border:1.5px solid var(--cream);border-radius:50%;position:relative;transition:transform .35s,background .25s}
+.plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;width:14px;height:1.5px;background:var(--cream);transform:translate(-50%,-50%);transition:background .25s}
+.plus::after{transform:translate(-50%,-50%) rotate(90deg)}
+.q>button:hover .plus{background:rgba(251,247,238,.15)}
+.q.open .plus{transform:rotate(45deg)}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+.q.open .more{grid-template-rows:1fr}
+.more>div{overflow:hidden}
+.more-in{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(16px,4vw,64px);padding:0 0 clamp(26px,3vw,40px)}
+.more h4{font-size:1.3rem;font-weight:500;letter-spacing:-.02em;line-height:1.25}
+.more p{color:#E7DFCB}
+.more a{display:inline-block;margin-top:14px;font-weight:600;text-underline-offset:5px}
+
+/* future */
+.future h2{margin-bottom:clamp(16px,2vw,24px)}
+.future .lead{font-size:1.2rem;margin-bottom:clamp(36px,5vw,72px)}
+.path{list-style:none;padding:0;position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.5vw,32px)}
+.path::before{content:"";position:absolute;left:0;right:0;top:11px;height:2px;background:linear-gradient(90deg,var(--clay),var(--umber));}
+.path li{padding-top:44px;position:relative}
+.path li::before{content:"";position:absolute;top:0;left:0;width:24px;height:24px;border-radius:50%;background:var(--cream);border:2px solid var(--umber)}
+.path li:last-child::before{background:var(--umber)}
+.path b{display:block;font-size:1.9rem;font-weight:500;letter-spacing:-.04em;line-height:1;margin-bottom:10px}
+.path p{font-size:.98rem;color:var(--muted)}
+
+/* footer */
+footer{padding:clamp(48px,7vw,96px) var(--pad) 28px;background:var(--ink);color:var(--cream);margin-top:clamp(40px,6vw,90px);position:relative}
+footer .big{font-size:clamp(2.6rem,9vw,7.5rem);font-weight:500;letter-spacing:-.05em;line-height:1}
+footer .big .flow{font-size:1.1em}
+.contact{display:flex;flex-wrap:wrap;gap:12px 48px;margin-top:36px;font-weight:500}
+.contact a{text-underline-offset:5px}
+.fine{margin-top:56px;font-size:.85rem;color:#A9A08B}
+
+@media (max-width:800px){
+  .hero-top{grid-template-columns:1fr;padding-left:0}
+  .hero-top .strata{max-width:300px;order:-1}
+  .area,.more-in,.cv-grid{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr}
+  .path{grid-template-columns:1fr}
+  .path::before{left:11px;right:auto;top:0;bottom:0;width:2px;height:auto}
+  .path li{padding:0 0 12px 44px}
+  .bar nav a:nth-child(n+4){display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .name{animation:none;clip-path:none}
+  .more,.plus{transition:none}
+}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <span>Geology Major</span>
+  <nav aria-label="Sections">
+    <a href="#research">Research</a><a href="#work">Work</a><a href="#resume">Resume</a><a href="#professors">Mentors</a><a href="#future">Future</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="top">
+  <div class="hero-top">
+    <p>I'm a senior at Alfred University studying how rock, water and time shape the land around us. I read landscapes for a living, one outcrop at a time.</p>
+    <svg class="strata" viewBox="0 0 400 400" role="img" aria-label="Illustration of folded rock layers">
+      <rect width="400" height="400" fill="#EDE5D2"/>
+      <path d="M0 70C90 30 170 120 260 80S360 50 400 70V400H0Z" fill="#D9CDB2"/>
+      <path d="M0 140C100 100 160 190 255 150S350 120 400 145V400H0Z" fill="#B9A783"/>
+      <path d="M0 215C90 175 170 265 265 225S360 195 400 215V400H0Z" fill="#8A7757"/>
+      <path d="M0 285C100 250 160 330 260 295S360 270 400 290V400H0Z" fill="#4A4331"/>
+      <path d="M0 345C110 320 170 385 270 355S360 340 400 352V400H0Z" fill="#2A261D"/>
+    </svg>
+  </div>
+  <h1 class="name" aria-label="Amanda Brown">Amanda<span class="flow">Brown</span><sup aria-hidden="true">*</sup></h1>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <h2>My <span class="flow">Research</span></h2>
+    <div class="areas">
+      <div class="area"><h3>Stratigraphy and sedimentary environments</h3><p>Reading layered rock to rebuild the rivers, shorelines and seas that deposited it. Replace this with Amanda's own description of her main research question.</p></div>
+      <div class="area"><h3>Glacial landscapes of the Southern Tier</h3><p>How retreating ice carved the valleys and left the deposits around Alfred, and what that history means for land and water today.</p></div>
+      <div class="area"><h3>Clay minerals and water chemistry</h3><p>What the mineral content of soil and sediment tells us about weathering, and how it moves through local streams.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="work" id="work">
+  <svg class="wave top" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50C240 110 480-10 720 50S1200 110 1440 50V100H0Z" fill="#EDE5D2"/></svg>
+  <div class="wrap">
+    <h2>Work <span class="flow">so far</span></h2>
+    <div class="rows">
+      <article class="row"><span class="yr">2026</span><div><h3>Senior thesis</h3><small>Alfred University, Geology</small></div><p>One or two sentences on the question, the field or lab methods, and what she found.</p></article>
+      <article class="row"><span class="yr">2025</span><div><h3>Summer field camp</h3><small>Location, program name</small></div><p>Mapped a field area, built cross-sections and wrote a geologic report with a small team.</p></article>
+      <article class="row"><span class="yr">2024</span><div><h3>Undergraduate research assistant</h3><small>Faculty lab or project</small></div><p>Prepared and analyzed samples, kept lab records and presented results at a campus symposium.</p></article>
+      <article class="row"><span class="yr">2023</span><div><h3>Position or internship</h3><small>Organization</small></div><p>Add a role, a result and a skill gained, such as GIS mapping or core logging.</p></article>
+    </div>
+  </div>
+  <svg class="wave bot" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50C240 110 480-10 720 50S1200 110 1440 50V100H0Z" fill="#EDE5D2"/></svg>
+</section>
+
+<section id="resume">
+  <div class="wrap">
+    <h2>Resume <span class="flow">and CV</span></h2>
+    <div class="cv-grid">
+      <a class="doc" href="/Amanda-Brown-Resume.pdf" download><b>Resume</b><span>One page, PDF. Best for jobs and internships.</span></a>
+      <a class="doc" href="/Amanda-Brown-CV.pdf" download><b>Curriculum vitae</b><span>Full detail, PDF. Best for graduate programs.</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="prof" id="professors">
+  <svg class="wave top" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50C240 110 480-10 720 50S1200 110 1440 50V100H0Z" fill="#4A4331"/></svg>
+  <div class="wrap">
+    <h2>What my <span class="flow">professors</span> say</h2>
+    <p>Select a comment to see the research behind it.</p>
+    <div class="quotes">
+      <div class="q">
+        <button type="button" aria-expanded="false" aria-controls="m1">
+          <span><blockquote class="flow">“Amanda notices what others walk past.”<cite>Dr. [Name], Professor of Geology</cite></blockquote></span><span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="more" id="m1"><div><div class="more-in"><h4>Outcrop description and field notebooks</h4><div><p>Summarize the project this comment refers to: the site, the method and the result.</p><a href="#">Read the full report</a></div></div></div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false" aria-controls="m2">
+          <span><blockquote class="flow">“Her thesis work is already at graduate level.”<cite>Dr. [Name], Thesis advisor</cite></blockquote></span><span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="more" id="m2"><div><div class="more-in"><h4>Senior thesis</h4><div><p>Add the abstract, key figures and findings here, or link to the poster or paper.</p><a href="#">Read the thesis abstract</a></div></div></div></div>
+      </div>
+      <div class="q">
+        <button type="button" aria-expanded="false" aria-controls="m3">
+          <span><blockquote class="flow">“A careful, generous lab partner.”<cite>Dr. [Name], Research supervisor</cite></blockquote></span><span class="plus" aria-hidden="true"></span>
+        </button>
+        <div class="more" id="m3"><div><div class="more-in"><h4>Sample analysis project</h4><div><p>Describe the lab techniques she used and what the data showed.</p><a href="#">See the poster</a></div></div></div></div>
+      </div>
+    </div>
+  </div>
+  <svg class="wave bot" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50C240 110 480-10 720 50S1200 110 1440 50V100H0Z" fill="#4A4331"/></svg>
+</section>
+
+<section class="future" id="future">
+  <div class="wrap">
+    <h2>In ten <span class="flow">years</span></h2>
+    <p class="lead">I want to be a working geologist who turns field data into decisions people can use, and who teaches others to read the land.</p>
+    <ol class="path">
+      <li><b>2027</b><p>Start a master's program in geology, building on my senior thesis.</p></li>
+      <li><b>2029</b><p>Finish the degree and join a research group or environmental consultancy.</p></li>
+      <li><b>2032</b><p>Lead my own field projects and earn professional geologist licensure.</p></li>
+      <li><b>2036</b><p>Direct a program that links geologic research with water and land planning, and mentor students.</p></li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p class="big">Let's <span class="flow">talk</span> rocks</p>
+  <div class="contact">
+    <a href="mailto:amanda@example.com">amanda@example.com</a>
+    <a href="https://www.linkedin.com/">LinkedIn</a>
+    <a href="#">Alfred University Geology</a>
+  </div>
+  <p class="fine">&copy; <span id="y">2026</span> Amanda Brown</p>
+</footer>
+
+<script>
+document.querySelectorAll('.q > button').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var item=btn.parentElement, open=!item.classList.contains('open');
+    document.querySelectorAll('.q.open').forEach(function(o){o.classList.remove('open');o.querySelector('button').setAttribute('aria-expanded','false')});
+    if(open){item.classList.add('open');btn.setAttribute('aria-expanded','true')}
+  });
+});
+document.getElementById('y').textContent=new Date().getFullYear();
+function fitName(){
+  var h=document.querySelector('.name'),p=h.parentElement,cs=getComputedStyle(p);
+  var avail=p.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
+  h.style.fontSize='100px';
+  var w=h.getBoundingClientRect().width;
+  h.style.fontSize=(100*avail/w)+'px';
+}
+fitName();
+window.addEventListener('resize',fitName);
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(fitName)}
+</script>
+</body>
+</html>
